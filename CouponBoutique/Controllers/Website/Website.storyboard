@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14112" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="6ci-PU-zLe">
+    <device id="retina3_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Webesite Controller-->
+        <scene sceneID="9FA-cz-BJn">
+            <objects>
+                <viewController id="6ci-PU-zLe" customClass="WebesiteController" customModule="CouponBoutique" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="UPU-gg-XkZ">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pVb-a4-s8c">
+                                <rect key="frame" x="0.0" y="20" width="320" height="460"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <wkWebViewConfiguration key="configuration">
+                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                    <wkPreferences key="preferences"/>
+                                </wkWebViewConfiguration>
+                            </wkWebView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="pVb-a4-s8c" firstAttribute="bottom" secondItem="Bhn-gP-TyI" secondAttribute="bottom" id="5F1-ua-4LC"/>
+                            <constraint firstItem="pVb-a4-s8c" firstAttribute="top" secondItem="Bhn-gP-TyI" secondAttribute="top" id="OwR-5c-El8"/>
+                            <constraint firstItem="pVb-a4-s8c" firstAttribute="trailing" secondItem="Bhn-gP-TyI" secondAttribute="trailing" id="XS7-b4-Jc8"/>
+                            <constraint firstItem="pVb-a4-s8c" firstAttribute="leading" secondItem="Bhn-gP-TyI" secondAttribute="leading" id="zDz-9A-ij7"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Bhn-gP-TyI"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="" image="couponsicon" selectedImage="couponsicon" id="smG-sa-PWP"/>
+                    <connections>
+                        <outlet property="webView" destination="pVb-a4-s8c" id="F2l-UT-cJt"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4YI-kO-vhb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="626.25" y="603.75"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="couponsicon" width="50" height="32"/>
+    </resources>
+</document>

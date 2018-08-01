@@ -1,0 +1,6 @@
+framework module Pods_CouponBoutique {
+  umbrella header "Pods-CouponBoutique-umbrella.h"
+
+  export *
+  module * { export * }
+}

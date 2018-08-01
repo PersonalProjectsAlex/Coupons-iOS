@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14112" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="7mw-c8-Jyq">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Tab Bar Controller-->
+        <scene sceneID="IrA-Tc-FSx">
+            <objects>
+                <tabBarController id="7mw-c8-Jyq" customClass="TabBarController" customModule="CouponBoutique" customModuleProvider="target" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="qhC-Tn-gdh">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="tintColor" red="0.21176470589999999" green="0.21176470589999999" blue="0.20784313730000001" alpha="1" colorSpace="calibratedRGB"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="EfF-jA-wJL" kind="relationship" relationship="viewControllers" id="9mv-q9-P38"/>
+                        <segue destination="euf-q6-G7U" kind="relationship" relationship="viewControllers" id="nmR-l2-2Qp"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="we5-Sc-gyk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-324" y="273"/>
+        </scene>
+        <!--Coupons-->
+        <scene sceneID="XIo-Dq-5ZC">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Coupons" id="EfF-jA-wJL" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="bVd-2K-Lky"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JNe-IV-9cI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="224" y="175"/>
+        </scene>
+        <!--Website-->
+        <scene sceneID="60M-bu-qbR">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Website" id="euf-q6-G7U" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="J15-GR-wuG"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fWk-kO-GSq" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="225" y="352"/>
+        </scene>
+    </scenes>
+</document>
